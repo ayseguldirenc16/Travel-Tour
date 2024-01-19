@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.466);
+}
+.navLists {
+    display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 10px
+}
+.navItem{
+    margin: 15px;
+}
+.logo h1{
+    color: rgb(54, 106, 116);
+    font-weight: 700;
+    font-size: 30px;
+}
+.iconTravel{
+    color:rgb(54, 106, 116);
+    font-size: 30px;
+    cursor: pointer;
+}
