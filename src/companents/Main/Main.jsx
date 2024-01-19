@@ -1,18 +1,23 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import './main.css'
 import Data from './Data'
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 
 function Main() {
+
+    useEffect(()=>{
+      Aos.init({duration:2000})
+    },[])
   return (
     <>
       <section className="main container section">
         <div className="secTitle">
-          <h3 className="title">En Çok Ziyaret Edilen Yerler:</h3>
+          <h3 className="title" data-aos="fade-right">En Çok Ziyaret Edilen Yerler:</h3>
         </div>
 
 
@@ -21,7 +26,7 @@ function Main() {
           {
             Data.map(({id, imgSrc,destTitle,location,grade,fees,description})=>{
               return(
-                <div className="singleDestination" key={id}>
+                <div className="singleDestination" key={id} data-aos="fade-up">
                  <div className="imageDiv">
                   <img src={imgSrc} alt={destTitle} />
                  </div>

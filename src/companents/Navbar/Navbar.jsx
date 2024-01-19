@@ -66,11 +66,11 @@ function Navbar() {
                 <a href="">İncele</a>
               </button>
             </ul>
-            {/* <div className="closeNavbar" onClick={removeNavbar} ><IoCloseCircle className="icon" /></div> */}
+            <div className="closeNavbar" onClick={removeNavbar} ><IoCloseCircle className="icon" /></div>
           </div>
 
           <div className="toggleNavbar" onClick={showNav} >
-          {/* <TbGridDots className="icon" /> */}
+          <TbGridDots className="icon" />
           </div>
         </header>
       </section>
